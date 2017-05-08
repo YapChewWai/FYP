@@ -24,8 +24,8 @@ colnames(data)<-c( #rename the column
 "B.10v3",#Exudates founds at alpha level 1.0
 "dist",
 "diame",
-"amfm",
-"cls"
+"amfm", # The result of the AM/FM-based classiﬁcation (No DR/DR)
+"cls" #class label, 0 is negative and 1 is positive
 )
 #identify the column names was changed
 head(data) #first 6 data row
