@@ -22,8 +22,8 @@ colnames(data)<-c( #rename the column
 "B.10",#Exudates founds at alpha level 1.0
 "B.10v2",#Exudates founds at alpha level 1.0
 "B.10v3",#Exudates founds at alpha level 1.0
-"dist",
-"diame",
+"dist", #Euclidean distance of the center of the macula and the center of the optic disk 
+"diame", #Diameter of the optic disc
 "amfm", # The result of the AM/FM-based classiﬁcation (No DR/DR)
 "cls" #class label, 0 is negative and 1 is positive
 )
