@@ -1,3 +1,5 @@
+names(data) Checking the column names before assign SD and variance
+
 #Standard deviation, square roof the variance
 SD.Qlty <- sd(data$Qlty)
 SD.Pre <- sd(data$Pre)
