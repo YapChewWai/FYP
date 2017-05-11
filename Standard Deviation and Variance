@@ -22,9 +22,6 @@ SD.diame=sd(data$diame)
 SD.amfm=sd(data$amfm)
 SD.cls=sd(data$cls) 
 
-#Check the 10v3
-# is.null(data$B.10v3)
-# is.na(data$B.10v3)
 
 #Variance square the value/data
 Vr.Qlty <- var(data$Qlty)
@@ -45,5 +42,5 @@ Vr.B.11 = var(data$B.11)
 Vr.B.12 = var(data$B.12)
 Vr.dist=var(data$dist)
 Vr.diame=var(data$diame)
-Vr.amfm=vardata$amfm)
+Vr.amfm=var(data$amfm)
 Vr.cls=var(data$cls) 
