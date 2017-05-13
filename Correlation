@@ -1,4 +1,4 @@
 #Correlation matrix
 
-correlation_matrix <- cor(data)
-round(correlation_matrix, 3)
+correlation_matrix <- cor(data) #assign correlation result to correlation_matrix
+round(correlation_matrix, 3) #round to 3 decimal place
