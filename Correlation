@@ -2,3 +2,12 @@
 
 correlation_matrix <- cor(data) #assign correlation result to correlation_matrix
 round(correlation_matrix, 3) #round to 3 decimal place
+
+#Correlation matrix with significance levels(p-value)
+install.packages("Hmisc")
+library("Hmisc")
+correlation_matrix2 <- rcorr(as.matrix(data))
+correlation_matrix2
+correlation_matrix2$n #total number of value
+correlation_matrix2$r #correlation coefficients, same result with correlation matrix
+correlation_matrix2$P #p-values
