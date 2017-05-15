@@ -44,3 +44,8 @@ Vr.dist=var(data$dist)
 Vr.diame=var(data$diame)
 Vr.amfm=var(data$amfm)
 Vr.cls=var(data$cls) 
+
+SD.Table.of.A<- matrix(c(25.62091,24.10561,22.8054,21.11477,19.50923,15.10156), ncol=6,byrow=TRUE) 
+colnames(SD.Table.of.A)<-c("SD.A.05","SD.A.06","SD.A.07","SD.A.08","SD.A.09","SD.A.10")
+SD.Table.of.A<-as.table(SD.Table.of.A)
+SD.Table.of.A
