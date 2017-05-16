@@ -49,3 +49,9 @@ SD.Table <- matrix(c(SD.Qlty, SD.Pre,SD.A.05,SD.A.06,SD.A.07,SD.A.08,SD.A.09,SD.
 colnames(SD.Table)<-c("SD.Qlty", "SD.Pre","SD.A.05","SD.A.06","SD.A.07","SD.A.08","SD.A.09","SD.A.10","SD.B.05","SD.B.06","SD.B.07","SD.B.08","SD.B.09","SD.B.10","SD.B.11","SD.B.12","SD.dist","SD.diame","SD.amfm","SD.cls")
 SD.Table<-as.table(SD.Table)
 SD.Table
+
+Vr.Table <- matrix(c(Vr.Qlty, Vr.Pre,Vr.A.05,Vr.A.06,Vr.A.07,Vr.A.08,Vr.A.09,Vr.A.10,Vr.B.05,Vr.B.06,Vr.B.07,Vr.B.08,Vr.B.09,Vr.B.10,Vr.B.11,Vr.B.12,Vr.dist,Vr.diame,Vr.amfm,Vr.cls), ncol=20, byrow = TRUE)
+colnames(Vr.Table)<-c("Vr.Qlty", "Vr.Pre","Vr.A.05","Vr.A.06","Vr.A.07","Vr.A.08","Vr.A.09","Vr.A.10","Vr.B.05","Vr.B.06","Vr.B.07","Vr.B.08","Vr.B.09","Vr.B.10","Vr.B.11","Vr.B.12","Vr.dist","Vr.diame","Vr.amfm","Vr.cls")
+Vr.Table<-as.table(Vr.Table)
+Vr.Table
+format(Vr.Table,scientific = FALSE)
