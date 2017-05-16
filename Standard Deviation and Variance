@@ -45,7 +45,7 @@ Vr.diame=var(data$diame)
 Vr.amfm=var(data$amfm)
 Vr.cls=var(data$cls) 
 
-SD.Table<- matrix(c(0.05887421,0.2739775,25.62091,24.10561,22.8054,21.11477,19.50923,15.10156), ncol=8,byrow=TRUE) 
-colnames(SD.Table)<-c("SD.Qlty", "SD.A.05","SD.Pre","SD.A.06","SD.A.07","SD.A.08","SD.A.09","SD.A.10")
-SD.Table<-as.table(SD.Table.of.A)
+SD.Table <- matrix(c(SD.Qlty, SD.Pre,SD.A.05,SD.A.06,SD.A.07,SD.A.08,SD.A.09,SD.A.10,SD.B.05,SD.B.06,SD.B.07,SD.B.08,SD.B.09,SD.B.10,SD.B.11,SD.B.12,SD.dist,SD.diame,SD.amfm,SD.cls), ncol=20, byrow = TRUE)
+colnames(SD.Table)<-c("SD.Qlty", "SD.Pre","SD.A.05","SD.A.06","SD.A.07","SD.A.08","SD.A.09","SD.A.10","SD.B.05","SD.B.06","SD.B.07","SD.B.08","SD.B.09","SD.B.10","SD.B.11","SD.B.12","SD.dist","SD.diame","SD.amfm","SD.cls")
+SD.Table<-as.table(SD.Table)
 SD.Table
