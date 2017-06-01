@@ -31,3 +31,5 @@ colnames(data)<-c( #rename the column
 head(data) #first 6 data row
 str(data) #structure of data
 summary(data) # 5M of the data
+nrow(data) #number of row
+ncol(data) #number of col
