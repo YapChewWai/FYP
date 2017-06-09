@@ -5,3 +5,4 @@ boxplot
 correlogram, correlationn in plot
 correlation scatterplot
 heatmap
+qplot
