@@ -11,3 +11,4 @@ correlation_matrix2
 correlation_matrix2$n #total number of value
 correlation_matrix2$r #correlation coefficients, same result with correlation matrix
 correlation_matrix2$P #p-values
+format(correlation_matrix2$P,scientific = FALSE)
