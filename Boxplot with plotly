@@ -6,3 +6,7 @@ library(plotly)
 p <- plot_ly(x= data$A.05,name="A.05", type = "box") %>% add_trace(x = data$A.06,name="A.06", type = "box") %>% add_trace(x = data$A.07,name="A.07", type = "box") %>% add_trace(x = data$A.08,name="A.08", type = "box") %>% add_trace(x = data$A.09,name="A.09", type = "box") %>% add_trace(x = data$A.10,name="A.10", type = "box")
 p
 
+q <- plot_ly(x= data$B.05,name="B.05", type = "box") %>% add_trace(x = data$B.06,name="B.06", type = "box") %>% add_trace(x = data$B.07,name="B.07", type = "box") %>% add_trace(x = data$B.08,name="B.08", type = "box") %>% add_trace(x = data$B.09,name="B.09", type = "box")%>% add_trace(x = data$B.10,name="B.10", type = "box")%>% add_trace(x = data$B.11,name="B.11", type = "box")%>% add_trace(x = data$B.12,name="B.12", type = "box")
+q
+
+#Reliaze there is a huge gap between atrribute B, so do a bloxplot individually.
