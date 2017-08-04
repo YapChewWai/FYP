@@ -1,0 +1,6 @@
+install.packages("plotly")
+library(plotly)
+
+# x is horizontal and y is vertical
+
+p <- plot_ly(y = data$B.05, type = "box")
