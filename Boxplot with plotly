@@ -4,3 +4,5 @@ library(plotly)
 # x is horizontal and y is vertical
 
 p <- plot_ly(y = data$B.05, name="B.05", type = "box")
+
+p <- plot_ly(y = data$B.05,name="B.05", type = "box") %>% add_trace(y = data$B.06,name="B.06", type = "box")
