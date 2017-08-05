@@ -10,3 +10,12 @@ q <- plot_ly(x= data$B.05,name="B.05", type = "box") %>% add_trace(x = data$B.06
 q
 
 #Reliaze there is a huge gap between atrribute B, so do a bloxplot individually.
+
+r <- plot_ly(y=data$B.05, type = "box", boxpoints = "all", name="B.05", jitter = 0.3,pointpos = -1.8)
+s <- plot_ly(y=data$B.06, type = "box", boxpoints = "all", name="B.06", jitter = 0.3,pointpos = -1.8)
+t <- plot_ly(y=data$B.07, type = "box", boxpoints = "all", name="B.07", jitter = 0.3,pointpos = -1.8)
+u <- plot_ly(y=data$B.08, type = "box", boxpoints = "all", name="B.08", jitter = 0.3,pointpos = -1.8)
+v <- plot_ly(y=data$B.09, type = "box", boxpoints = "all", name="B.09", jitter = 0.3,pointpos = -1.8)
+w <- plot_ly(y=data$B.10, type = "box", boxpoints = "all", name="B.10", jitter = 0.3,pointpos = -1.8)
+x <- plot_ly(y=data$B.11, type = "box", boxpoints = "all", name="B.11", jitter = 0.3,pointpos = -1.8)
+y <- plot_ly(y=data$B.12, type = "box", boxpoints = "all", name="B.12", jitter = 0.3,pointpos = -1.8)
