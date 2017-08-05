@@ -3,19 +3,25 @@ library(plotly)
 
 # x is horizontal and y is vertical
 
-p <- plot_ly(x= data$A.05,name="A.05", type = "box") %>% add_trace(x = data$A.06,name="A.06", type = "box") %>% add_trace(x = data$A.07,name="A.07", type = "box") %>% add_trace(x = data$A.08,name="A.08", type = "box") %>% add_trace(x = data$A.09,name="A.09", type = "box") %>% add_trace(x = data$A.10,name="A.10", type = "box")
-p
+a <- plot_ly(x=data$Qlty, type = "histogram", name="Quality")
+b <- plot_ly(x=data$Pre, type = "histogram", name="Pre Screening")
+c <- plot_ly(x= data$A.05,name="A.05", type = "box") %>% add_trace(x = data$A.06,name="A.06", type = "box") %>% add_trace(x = data$A.07,name="A.07", type = "box") %>% add_trace(x = data$A.08,name="A.08", type = "box") %>% add_trace(x = data$A.09,name="A.09", type = "box") %>% add_trace(x = data$A.10,name="A.10", type = "box")
+c
 
-q <- plot_ly(x= data$B.05,name="B.05", type = "box") %>% add_trace(x = data$B.06,name="B.06", type = "box") %>% add_trace(x = data$B.07,name="B.07", type = "box") %>% add_trace(x = data$B.08,name="B.08", type = "box") %>% add_trace(x = data$B.09,name="B.09", type = "box")%>% add_trace(x = data$B.10,name="B.10", type = "box")%>% add_trace(x = data$B.11,name="B.11", type = "box")%>% add_trace(x = data$B.12,name="B.12", type = "box")
-q
+d <- plot_ly(x= data$B.05,name="B.05", type = "box") %>% add_trace(x = data$B.06,name="B.06", type = "box") %>% add_trace(x = data$B.07,name="B.07", type = "box") %>% add_trace(x = data$B.08,name="B.08", type = "box") %>% add_trace(x = data$B.09,name="B.09", type = "box")%>% add_trace(x = data$B.10,name="B.10", type = "box")%>% add_trace(x = data$B.11,name="B.11", type = "box")%>% add_trace(x = data$B.12,name="B.12", type = "box")
+d
 
 #Reliaze there is a huge gap between atrribute B, so do a bloxplot individually.
 
-r <- plot_ly(y=data$B.05, type = "box", boxpoints = "all", name="B.05", jitter = 0.3,pointpos = -1.8)
-s <- plot_ly(y=data$B.06, type = "box", boxpoints = "all", name="B.06", jitter = 0.3,pointpos = -1.8)
-t <- plot_ly(y=data$B.07, type = "box", boxpoints = "all", name="B.07", jitter = 0.3,pointpos = -1.8)
-u <- plot_ly(y=data$B.08, type = "box", boxpoints = "all", name="B.08", jitter = 0.3,pointpos = -1.8)
-v <- plot_ly(y=data$B.09, type = "box", boxpoints = "all", name="B.09", jitter = 0.3,pointpos = -1.8)
-w <- plot_ly(y=data$B.10, type = "box", boxpoints = "all", name="B.10", jitter = 0.3,pointpos = -1.8)
-x <- plot_ly(y=data$B.11, type = "box", boxpoints = "all", name="B.11", jitter = 0.3,pointpos = -1.8)
-y <- plot_ly(y=data$B.12, type = "box", boxpoints = "all", name="B.12", jitter = 0.3,pointpos = -1.8)
+e <- plot_ly(y=data$B.05, type = "box", boxpoints = "all", name="B.05", jitter = 0.3,pointpos = -1.8)
+f <- plot_ly(y=data$B.06, type = "box", boxpoints = "all", name="B.06", jitter = 0.3,pointpos = -1.8)
+g <- plot_ly(y=data$B.07, type = "box", boxpoints = "all", name="B.07", jitter = 0.3,pointpos = -1.8)
+h <- plot_ly(y=data$B.08, type = "box", boxpoints = "all", name="B.08", jitter = 0.3,pointpos = -1.8)
+i <- plot_ly(y=data$B.09, type = "box", boxpoints = "all", name="B.09", jitter = 0.3,pointpos = -1.8)
+j <- plot_ly(y=data$B.10, type = "box", boxpoints = "all", name="B.10", jitter = 0.3,pointpos = -1.8)
+k <- plot_ly(y=data$B.11, type = "box", boxpoints = "all", name="B.11", jitter = 0.3,pointpos = -1.8)
+l <- plot_ly(y=data$B.12, type = "box", boxpoints = "all", name="B.12", jitter = 0.3,pointpos = -1.8)
+m <- plot_ly(y=data$dist, type = "box", boxpoints = "all", name="Euclidean distance", jitter = 0.3,pointpos = -1.8)
+n <- plot_ly(y=data$diame, type = "box", boxpoints = "all", name="Diameter of the optic disc", jitter = 0.3,pointpos = -1.8)
+o <- plot_ly(x=data$amfm, type = "histogram", name="AM/FM")
+p <- plot_ly(x=data$cls, type = "histogram", name="Class")
