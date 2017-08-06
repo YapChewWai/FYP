@@ -1,4 +1,11 @@
 install.packages("GGally")
 library(GGally)
 
+
+z <- cor(data)
+require(lattice)
+levelplot(z)
+
+#It is not clear, use other library
+
 ggcorr(data,method = c("pairwise", "pearson"), name ="Pearson")+labs(title="Correlation matrix")
