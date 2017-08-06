@@ -25,3 +25,24 @@ q <- plot_ly(x=data$diame, type = "histogram",name="Diameter of the optic disc")
 
 r <- plot_ly(x=data$amfm, type = "histogram", name="AM/FM")
 s <- plot_ly(x=data$cls, type = "histogram", name="Class")
+
+t <- plot_ly(alpha = 0.6) %>%
+    add_histogram(x = data$A.05) %>%
+    add_histogram(x = data$A.06) %>%
+    add_histogram(x = data$A.07) %>%
+    add_histogram(x = data$A.08) %>%
+    add_histogram(x = data$A.09) %>%
+    add_histogram(x = data$A.10) %>%
+    layout(barmode = "overlay")
+    
+u <- plot_ly(alpha = 0.6) %>%
+    add_histogram(x = data$B.05) %>%
+    add_histogram(x = data$B.06) %>%
+    add_histogram(x = data$B.07) %>%
+    add_histogram(x = data$B.08) %>%
+    add_histogram(x = data$B.09) %>%
+    add_histogram(x = data$B.10) %>%
+    add_histogram(x = data$B.11) %>%
+    add_histogram(x = data$B.12) %>%
+    layout(barmode = "overlay")
+    
