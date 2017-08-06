@@ -1,11 +1,15 @@
 install.packages("GGally")
 library(GGally)
-
+install.packages("ggcorrplot")  
+library(ggcorrplot)
 
 z <- cor(data)
 require(lattice)
 levelplot(z)
 
+corr <- round(cor(data), 1)
+ggcorrplot(corr, method = "circle")
+
 #It is not clear, use other library
 
-ggcorr(data,method = c("pairwise", "pearson"), name ="Pearson")+labs(title="Correlation matrix")
+ggcorr(data,method = c("pairwise", "pearson"), name ="Pearson")
