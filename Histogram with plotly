@@ -17,7 +17,7 @@ k <- plot_ly(x=data$B.08, type = "histogram", name="B.08")
 l <- plot_ly(x=data$B.09, type = "histogram", name="B.09")
 m <- plot_ly(x=data$B.10, type = "histogram", name="B.10")
 n <- plot_ly(x=data$B.11, type = "histogram", name="B.11")
-o <- plot_ly(x=data$B.11, type = "histogram", name="B.12")
+o <- plot_ly(x=data$B.12, type = "histogram", name="B.12")
 
 
 p <- plot_ly(x=data$dist, type = "histogram", name="Euclidean distance")
