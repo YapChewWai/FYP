@@ -1,0 +1,27 @@
+library(plotly)
+
+a <- plot_ly(x=data$Qlty, type = "histogram", name="Quality")
+b <- plot_ly(x=data$Pre, type = "histogram", name="Pre Screening")
+
+c<- plot_ly(x=data$A.05, type = "histogram", name="A.05")
+d<- plot_ly(x=data$A.06, type = "histogram", name="A.06")
+e<- plot_ly(x=data$A.07, type = "histogram", name="A.07")
+f<- plot_ly(x=data$A.08, type = "histogram", name="A.08")
+g<- plot_ly(x=data$A.09, type = "histogram", name="A.09")
+g1<- plot_ly(x=data$A.10, type = "histogram", name="A.10")
+
+h <- plot_ly(x=data$B.05, type = "histogram", name="B.05")
+i <- plot_ly(x=data$B.05, type = "histogram", name="B.06")
+j <- plot_ly(x=data$B.07, type = "histogram", name="B.07")
+k <- plot_ly(x=data$B.08, type = "histogram", name="B.08")
+l <- plot_ly(x=data$B.09, type = "histogram", name="B.09")
+m <- plot_ly(x=data$B.10, type = "histogram", name="B.10")
+n <- plot_ly(x=data$B.11, type = "histogram", name="B.11")
+o <- plot_ly(x=data$B.11, type = "histogram", name="B.12")
+
+
+p <- plot_ly(x=data$dist, type = "histogram", name="Euclidean distance")
+q <- plot_ly(x=data$diame, type = "histogram",name="Diameter of the optic disc")
+
+r <- plot_ly(x=data$amfm, type = "histogram", name="AM/FM")
+s <- plot_ly(x=data$cls, type = "histogram", name="Class")
