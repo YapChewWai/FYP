@@ -27,13 +27,13 @@ r <- plot_ly(x=data$amfm, type = "histogram", name="AM/FM")
 s <- plot_ly(x=data$cls, type = "histogram", name="Class")
 
 t <- plot_ly(alpha = 0.6) %>%
-    add_histogram(x = data$A.05) %>%
-    add_histogram(x = data$A.06) %>%
-    add_histogram(x = data$A.07) %>%
-    add_histogram(x = data$A.08) %>%
-    add_histogram(x = data$A.09) %>%
-    add_histogram(x = data$A.10) %>%
-    layout(barmode = "overlay")
+     add_histogram(x = data$A.05,name="A.05") %>%
+     add_histogram(x = data$A.06,name="A.06") %>%
+     add_histogram(x = data$A.07,name="A.07") %>%
+     add_histogram(x = data$A.08,name="A.08") %>%
+     add_histogram(x = data$A.09,name="A.09") %>%
+     add_histogram(x = data$A.10,name="A.10") %>%
+     layout(barmode = "overlay")
     
 u <- plot_ly(alpha = 0.6) %>%
     add_histogram(x = data$B.05) %>%
